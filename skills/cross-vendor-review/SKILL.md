@@ -1,13 +1,14 @@
 ---
 name: cross-vendor-review
 description: Run an adversarial code review against a non-Claude model (Codex / GPT / Gemini) and surface disagreements with Claude's own review. Use ONLY for noteworthy PRs (auth, billing, data-deletion, irreversible migration, large-blast-radius). Inspired by gstack's /codex command.
+origin: molecule-skill-cross-vendor-review
 ---
 
 # cross-vendor-review
 
 Two LLMs catch bugs one doesn't. Claude has blind spots; so does GPT-5; so does Gemini. For high-stakes PRs the cost of a second model is dwarfed by the cost of a missed defect.
 
-## When to invoke
+## When to Use
 
 ALWAYS for PRs touching:
 - Authentication, authorization, session, or token handling
